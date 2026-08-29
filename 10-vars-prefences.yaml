@@ -3,12 +3,12 @@
   connection: local 
   vars:
     NAME: "Ansible from PLAY"
-  # vars_files:
+    vars_files:
   # - course.yaml
-  vars_prompt:
-  - name: NAME
-    prompt: please enter the name
-    private: false
+  # vars_prompt:
+  # - name: NAME
+  #   prompt: please enter the name
+  #   private: false
   tasks:
   - name: print name
     # vars: 
@@ -25,4 +25,4 @@
 # please enter the name: ansible from prompt
 
 #3. file will run 
-# 
+# 4. prompt
