@@ -1,9 +1,9 @@
 - name: variable perferences 
   hosts: local 
   connection: local 
-  vars:
-    NAME: "Ansible from PLAY"
-    vars_files:
+  # vars:
+  #   NAME: "Ansible from PLAY"
+  #   vars_files:
   # - course.yaml
   # vars_prompt:
   # - name: NAME
