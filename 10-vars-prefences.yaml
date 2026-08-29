@@ -25,5 +25,6 @@
 # please enter the name: ansible from prompt
 
 #3. file will run 
-# 4. prompt
-#. play level variables
+#4. prompt
+#5.play level variables
+#6. inventory
