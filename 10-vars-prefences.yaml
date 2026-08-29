@@ -3,8 +3,8 @@
   connection: local 
   vars:
     NAME: "Ansible from PLAY"
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   vars_prompt:
   - name: NAME
     prompt: please enter the name
@@ -24,4 +24,5 @@
 # ansible-playbook -i inventory.ini 10-vars-prefences.yaml
 # please enter the name: ansible from prompt
 
-#3. 
+#3. file will run 
+# 
