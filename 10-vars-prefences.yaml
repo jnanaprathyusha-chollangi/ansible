@@ -11,7 +11,17 @@
     private: false
   tasks:
   - name: print name
-    vars: 
-      NAME: "Ansible from TASK"
+    # vars: 
+    #   NAME: "Ansible from TASK"
     ansible.builtin.debug:
       msg: "Hi {{ NAME }}"
+  
+
+# 1. argument will run ..it will give the output
+#  ansible-playbook -i inventory.ini -e 'NAME="Ansible from args"' 10-vars-prefences.yaml
+
+#2. task will run
+# ansible-playbook -i inventory.ini 10-vars-prefences.yaml
+# please enter the name: ansible from prompt
+
+#3. 
