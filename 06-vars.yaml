@@ -1,11 +1,9 @@
 
-- name: task level variables 
+- name: file variables 
   hosts: local
   connection: local
-  vars:
-    COURSE: "DevOps with AWS"
-    DURATION: "140HRS"
-    TRAINER: "Siva kumar reddy"
+  vars_files:
+  - course.yaml
   tasks:
   - name: print variables
       COURSE: "Ansible"
