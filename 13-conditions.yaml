@@ -4,7 +4,7 @@
   vars: 
     NUMBER_OF_SESSIONS: 7
   tasks:
-  - name: check the condition is ansible more than 5 sessions
-    ansible.builtin.debug:
-      msg:"Yes, more than 5 sessions"
-    when: NUMBER_OF_SESSIONS > 5
+    - name: check the condition is ansible more than 5 sessions
+      ansible.builtin.debug:
+        msg:"Yes, more than 5 sessions"
+      when: NUMBER_OF_SESSIONS > 5
