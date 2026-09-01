@@ -18,5 +18,5 @@
       msg: "{{ topics | split(',') }}"
 
   - name: convert the dictionary or map  in to list
-    ansbile.builtin.debug:
+    ansible.builtin.debug:
       msg: "{{ tagsList | dict2items }}"
