@@ -1,6 +1,6 @@
 - name: grathering facts
   hosts: local
-  connections: local
+  connection: local
   tasks:
   - name: print grathering facts
     ansible.builtin.debug:
