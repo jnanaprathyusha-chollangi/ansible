@@ -3,6 +3,7 @@
   connection: local 
   vars:
     topics: linux, shellscript,ansible,terraform
+    COURSE: "Devops with ansible , I am learning"
     tagsmap:
       name: ansible
       project: roboshop
@@ -39,3 +40,13 @@
   - name: convert the list in to map
     ansible.builtin.debug:
       msg: "{{ tagsList| items2dict }}"
+
+
+  - name: convert the string into upper case
+    ansible.builtin.debug:
+      msg: "{{ COURSE | upper }}"
+  
+
+  - name: convert the string into lower case
+    ansible.builtin.debug:
+      msg: "{{ COURSE | lower}}"
