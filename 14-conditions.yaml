@@ -1,0 +1,7 @@
+- name: grathering facts
+  hosts: local
+  connections: local
+  tasks:
+  - name: print grathering facts
+    ansible.builtin.debug:
+      msg: "{{ ansible_facts }}"
