@@ -5,10 +5,9 @@
   tasks:
   - name: install packages
     ansible.builtin.debug:
-    name: "{{ item.name }}"
-    state: "{{ item.state }}"
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
   loop: #list of map
   - { name: "mysql", state: "absent"} # map
   - { nmae: "ngnix", state: "present"}
   - { name: "zip", state: "present"}
-  
