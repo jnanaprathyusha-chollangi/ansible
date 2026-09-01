@@ -19,4 +19,4 @@
 
   - name: convert the dictionary or map  in to list
     ansbile.builtin.debug:
-      msg: "{{ tags | dict2items }}"
+      msg: "{{ tagsList | dict2items }}"
