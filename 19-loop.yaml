@@ -3,11 +3,20 @@
   connection: local 
   vars:
     topics: linux, shellscript,ansible,terraform
+    tagsList:
+      name: ansible
+      project: roboshop
+      component: catalogue
+
   tasks:
   - name: greeting
     ansible.builtin.debug:
       msg: "Hii Prathyusha, {{ GREETING | default('good morning!') }}"
 
-  - name: print topics
+  - name: convert the string in to list
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
+
+  - name: convert the dictionary or map  in to list
+    ansbile.builtin.debug:
+      msg: "{{ tags | dict2items }}"
