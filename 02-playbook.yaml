@@ -1,6 +1,17 @@
 - name: ping the server
-  hosts: web
+  #hosts: web
+  hosts: local
+  connection: local
   tasks:
   - name: print hello world
     ansible.builtin.debug:
       msg: "Hello WOrld!"
+
+
+- name: PLAY-2
+  hosts: local
+  connection: local
+  tasks:
+  - name: play2 and task-1
+    ansible.builtin.debug: 
+      msg: "Hello from PLAY-2 and TASK-1"
