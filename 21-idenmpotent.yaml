@@ -6,3 +6,4 @@
   - name: user creation
     ansible.builtin.user:
       name: pradush
+    
