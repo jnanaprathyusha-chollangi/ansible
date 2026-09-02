@@ -5,10 +5,10 @@
   tasks:
   - name: user creation
     ansible.builtin.user:
-      user_name: pradush
+      name: pradush
     register: user_name
 
 
   - name: print user name
     ansible.builtin.debug:
-      msg: "{{ user_name }}"
+      msg: "{{ user_name.name }}"
